@@ -20,8 +20,13 @@ read operation
  case $operation in
    "Add"| "add")
      echo "Enter the numbers that you want to add"
-     read first second
-     
+     echo "Enter first number"
+     read first
+     echo "Enter second number"
+     read second
+     let sum=$first+$second
+     echo "the result is $sum"
+
      ;;
    "Subtract" | "subtract")
      echo "What would you like to subtract"
