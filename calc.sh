@@ -9,6 +9,8 @@ echo "hello $name, it is nice to meet you!!!"
   # Add
   # Subtract
   # Exit
+while true
+do  
 echo "Please enter the operation that you would like to make"
 echo "Add"
 echo "Subtract"
@@ -17,6 +19,7 @@ echo "Exit"
 # Then, capture the user selection.
 read operation
 # If the selection matches a supported operation, execute the operation.
+
  case $operation in
    "Add"| "add")
      echo "Enter the numbers that you want to add"
@@ -29,7 +32,6 @@ read operation
 
      ;;
    "Subtract" | "subtract")
-     echo "What would you like to subtract"
      echo "Enter the numbers that you want to subtract"
      echo "Enter first number"
      read first
@@ -39,8 +41,9 @@ read operation
      echo "the result is $sub"
      ;;
    *)
-     echo "Whoops, this program does not support $operation"
+     echo "Whoops!!!, this program does not support $operation"
      ;;
 esac
+done
 # If the selection does not match a support operation, display an error message.
 # When the operation is complete, redisplay the menu.
