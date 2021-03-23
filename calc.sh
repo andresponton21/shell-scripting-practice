@@ -4,6 +4,7 @@
 echo "Welcome!!!, please enter your name:"
 read name
 echo "hello $name, it is nice to meet you!!!"
+sleep 1
 
 # Then, display a menu that outlines the possible operations:
   # Add
@@ -29,6 +30,7 @@ read operation
      read second
      let sum=$first+$second
      echo "the result is $sum"
+     sleep 1
 
      ;;
    "Subtract" | "subtract")
@@ -39,13 +41,16 @@ read operation
      read second
      let sub=$first-$second
      echo "the result is $sub"
+     sleep 1
      ;;
+
     "Exit" | "exit")
     echo "See you later $name"
     exit
     ;;
    *)
      echo "Whoops!!!, this program does not support $operation"
+     sleep 1
      ;;
 esac
 done
