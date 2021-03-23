@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 # When the program is first loaded, display a greeting to the user.
-echo "Welcome!!!, please enter your name"
+echo "Welcome!!!, please enter your name:"
 read name
 echo "hello $name, it is nice to meet you!!!"
 
@@ -11,7 +11,7 @@ echo "hello $name, it is nice to meet you!!!"
   # Exit
 while true
 do  
-echo "Please enter the operation that you would like to make"
+echo "Please type the operation that you would like to make or type Exit to quit:"
 echo "Add"
 echo "Subtract"
 echo "Exit"
@@ -40,6 +40,10 @@ read operation
      let sub=$first-$second
      echo "the result is $sub"
      ;;
+    "Exit" | "exit")
+    echo "See you later $name"
+    exit
+    ;;
    *)
      echo "Whoops!!!, this program does not support $operation"
      ;;
