@@ -30,6 +30,13 @@ read operation
      ;;
    "Subtract" | "subtract")
      echo "What would you like to subtract"
+     echo "Enter the numbers that you want to subtract"
+     echo "Enter first number"
+     read first
+     echo "Enter second number"
+     read second
+     let sub=$first-$second
+     echo "the result is $sub"
      ;;
    *)
      echo "Whoops, this program does not support $operation"
